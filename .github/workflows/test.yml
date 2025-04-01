@@ -21,7 +21,7 @@ jobs:
           node-version: '20'
       
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       
       - name: Run HTML Lint
         run: npx htmlhint "*.html"
@@ -41,7 +41,7 @@ jobs:
           node-version: '20'
       
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
 
       - name: Run JavaScript Tests
         run: npm test
