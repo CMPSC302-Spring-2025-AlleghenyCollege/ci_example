@@ -52,3 +52,40 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.resources {
+  margin-top: 40px;
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+
+.resources h2, .resources h3 {
+  color: #4682b4;
+}
+
+.resources ul {
+  padding-left: 20px;
+}
+
+.resources li {
+  margin-bottom: 8px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+}
+
+footer a {
+  color: #5cb85c;
+}
+
+footer a:hover {
+  color: #4cae4c;
+}
