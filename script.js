@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = document.getElementById("dynamicText");
 
     button.addEventListener("click", () => {
-        text.textContent = "Text Changed!";
+        text.textContent = "Changed Text!";
     });
 });
