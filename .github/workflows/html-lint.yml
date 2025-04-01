@@ -21,13 +21,13 @@ jobs:
           node-version: '20'
       
       - name: Install Dependencies
-        run: npm install --save-dev htmlhint stylelint stylelint-config-standard
+        run: npm ci
       
       - name: Run HTML Lint
-        run: npx htmlhint .
+        run: npx htmlhint "*.html"
       
       - name: Run CSS Lint
-        run: npx stylelint "**/*.css"
+        run: npm run lint:css
   
   test:
     runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
           node-version: '20'
       
       - name: Install Dependencies
-        run: npm install --save-dev jest jsdom @testing-library/dom
+        run: npm ci
 
       - name: Run JavaScript Tests
-        run: npx jest
+        run: npm test
