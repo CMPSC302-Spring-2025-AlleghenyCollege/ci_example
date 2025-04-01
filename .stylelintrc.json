@@ -4,7 +4,6 @@
     "declaration-block-no-redundant-longhand-properties": null,
     "alpha-value-notation": "percentage",
     "color-function-notation": "modern",
-    "selector-id-pattern": "^[a-z][a-zA-Z0-9]*$",
-    "indentation": 2
+    "selector-id-pattern": "^[a-z][a-zA-Z0-9]*$"
   }
 }
