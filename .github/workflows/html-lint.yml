@@ -27,7 +27,7 @@ jobs:
         run: npx htmlhint .
       
       - name: Run CSS Lint
-        run: npx stylelint "**/*.css"
+        run: npx stylelint "*.css"
   
   test:
     runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
           node-version: '20'
       
       - name: Install Dependencies
-        run: npm install --save-dev jest @testing-library/dom
-      
+        run: npm install --save-dev jest jsdom @testing-library/dom
+
       - name: Run JavaScript Tests
         run: npx jest
