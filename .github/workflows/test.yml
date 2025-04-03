@@ -35,7 +35,7 @@ jobs:
         run: npm install
       
       - name: Run HTML Lint
-        run: npx htmlhint "*.html"
+        run: npx htmlhint "*.html" "index.html"
       
       - name: Run CSS Lint
         run: npm run lint:css
